@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-color: white;
+      }
+      header {
+        color: white;
+        background-color: black;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      table {
+        width: 100%;
+        border: 2px solid black;
+        text-align: center;
+        margin: 10px;
+      }
+
+      tr {
+        border-bottom: 2px solid black;
+      }
+
+      #tb1 {
+        height: 50px;
+        background-color: black;
+        font-family: "Courier New", Courier, monospace;
+      }
+    
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h4 class="text-light"><b>Contact Page</b></h1>
+      <div>
+        <a href=""><button>ALL CONTACTS</button></a>
+       <a href="contact list.html"><button>CREATE</button></a>
+       <a href="">  <button>LOGOUT</button></a>
+      </div>
+    </header>
+    <h2 class="text-center mt-2">YOUR CONTACTS</h2>
+    <button class="m-2 btn btn-danger"><a href="">Reload Contact</a></button>
+    <br />
+    <div ><form class="d-flex" role="search">
+      <input
+        class="form-control me-2 mt-3 mb-3"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button class="btn btn-outline-success pe-1" type="submit">Search</button>
+    </form></div>
+    <h2 class="mb-3 fs-6">Your total contacts: 1</h2>
+    <table>
+      <tr id="tb1">
+        <th class="txt text-light">NAME</th>
+        <th class="txt text-light">ADDRESS</th>
+        <th class="txt text-light">EMAIL</th>
+        <th class="txt text-light">PHONE NUMBER</th>
+      </tr>
+      <tr>
+        <td>Shaik Aman</td>
+        <td>Hyderabad</td>
+        <td>shaikammu77@gmail.com</td>
+        <td>7010405628</td>
+      </tr>
+    </table>
+    <br />
+    <button
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+      class="btn btn-warning"
+    >
+      select
+    </button>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">SHAIK AMAN</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h3>Shaik Aman</h3>
+            <h4>Hyderabad</h4>
+            <h4>Shaikammu77@gmail.com</h4>
+            <h4>7010405628</h4>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-warning"
+              data-bs-dismiss="modal"
+            >
+              Delete
+            </button>
+            <button type="button" class="btn btn-info" data-bs-dismiss="modal">
+              Edit
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      alert("Allow");
+    </script>
+  </body>
+</html>

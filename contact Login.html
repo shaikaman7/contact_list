@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        margin: 0px;
+      }
+      header {
+        color: white;
+        background-color: black;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .form {
+        width: 750px;
+        background-color: white;
+        padding: 20px;
+        justify-content: center;
+        margin: 10px;
+        position: relative;
+        left: 200px;
+      }
+      h1 {
+        color: grey;
+        font-size: 1.2em;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 1000;
+      }
+      h2 {
+        font-size: 1.5em;
+        font-family: "Times New Roman", Times, serif;
+        color: black;
+        font-weight: 1000;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .fc {
+        background-color: rgb(232, 228, 228);
+      }
+      h3,
+      a {
+        margin-top: 10px;
+        font-size: 15px;
+        color: grey;
+        text-decoration: none;
+      }
+      a:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><b>Contact Page</b></h1>
+      <div>
+        <button>LOGIN</button>
+        <a href="contact Register.html"><button>REGISTER</button></a>
+      </div>
+    </header>
+    <div class="form">
+      <form class="info">
+        <h2><u>LOGIN</u></h2>
+
+        <label for="email"><h1>EMAIL ADDRESS</h1></label>
+        <input type="email" id="email" class="fc form-control" required />
+        <br />
+        <label for="password"><h1>PASSWORD</h1></label>
+        <input type="password" id="pwd" class="fc form-control" required />
+        <br />
+        <input
+          type="button"
+          value="LOGIN"
+          onclick="demo()"
+          class="text-light bg-dark p-2"
+        />
+      </form>
+      <h3>
+        Don't have any account?
+        <a href="contact list.html"
+          ><u><b>Create one</b></u></a
+        >
+      </h3>
+    </div>
+    <script>
+      const demo = () => {
+        let data1 = document.getElementById("email").value;
+        let data2 = document.getElementById("pwd").value;
+        alert(data1);
+      };
+    </script>
+  </body>
+</html>
